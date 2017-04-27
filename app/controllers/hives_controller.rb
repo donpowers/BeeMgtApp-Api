@@ -9,6 +9,15 @@ class HivesController < ApplicationController
     render json: Hive.find(params[:id])
   end
 
+  def update
+    @hive = Hive.find(params[:id])
+    if @hive.update(hive_params)
+      head :no_content
+    else
+      render json: @example.errors, status: :unprocessable_entity
+    end
+  end
+
   def create
     # will need to update this to support current_user model
     @hive = Hive.new(hive_params)
