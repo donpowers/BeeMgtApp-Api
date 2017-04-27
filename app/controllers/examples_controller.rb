@@ -19,8 +19,8 @@ class ExamplesController < OpenReadController
   # POST /examples
   # POST /examples.json
   def create
+    # example = Example.new(example_params)...used this in the past
     @example = current_user.examples.build(example_params)
-
     if @example.save
       render json: @example, status: :created
     else
@@ -47,6 +47,8 @@ class ExamplesController < OpenReadController
   end
 
   def set_example
+    # @example=Example.fing(params[:id])...used this in the past.
+    # filter out things that don't below to this user
     @example = current_user.examples.find(params[:id])
   end
 
