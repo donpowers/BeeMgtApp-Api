@@ -28,6 +28,13 @@ class HivesController < ApplicationController
     end
   end
 
+  def destroy
+    @hive = Hive.find(params[:id])
+    @hive.destroy
+
+    head :no_content
+  end
+
   def hive_params
     params.require(:hive).permit(:hive_name, :queen_type, :brood_supers,
                                  :honey_supers, :hive_location)
