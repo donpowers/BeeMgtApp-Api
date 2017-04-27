@@ -4,4 +4,8 @@ class HivesController < ApplicationController
 
   render json: @hives
   end
+
+  def show
+    render json: Hive.find(params[:id])
+  end
 end
