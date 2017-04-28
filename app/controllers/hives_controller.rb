@@ -14,7 +14,7 @@ class HivesController < ApplicationController
     if @hive.update(hive_params)
       head :no_content
     else
-      render json: @example.errors, status: :unprocessable_entity
+      render json: @hive.errors, status: :unprocessable_entity
     end
   end
 
@@ -37,7 +37,7 @@ class HivesController < ApplicationController
 
   def hive_params
     params.require(:hive).permit(:hive_name, :queen_type, :brood_supers,
-                                 :honey_supers, :hive_location)
+                                 :honey_supers, :hive_location, :user_id)
   end
   private :hive_params
 end
