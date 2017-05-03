@@ -31,11 +31,10 @@ http://i.imgur.com/sGyoD9N.png
 
 1. Determine what DB tables are required and relationships
 2. Build out rails scaffold for new tables to support features.
-3. Deployed online, where the rest of the world can access it.
-4. Implement routes and controllers along with curl scripts for support features.
-5. Add 'current_user' support.
-6. Build custom route(return on those hives for the user logged in)
-7. Deploy repo to production site.
+3. Implement routes and controllers along with curl scripts for support features.
+4. Add 'current_user' support.
+5. Build custom route(return on those hives for the user logged in)
+6. Deploy repo to production site.
 
 I followed my project approach as listed above.  It worked well. I had
 only a few challenges: current user support and heroku deploy. Working
