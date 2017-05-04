@@ -4,6 +4,7 @@
 # Honey Bee Colony Management API
 Repo: https://github.com/donpowers/BeeMgtApp-Api
 Repo: https://github.com/donpowers/BeeMgtApp-Client
+Heroku: https://git.heroku.com/beemgtapp-api.git
 
 Goals
 
